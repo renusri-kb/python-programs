@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    marksheet=[]
+    scorelist=[]
+    for _ in range(int(input())):
+        name =input()
+        score = float(input())
+        marksheet+=[[name,score]]
+        scorelist+=[score]
+    a=sorted(scorelist)
+    b=min(scorelist)
+    for n,s in sorted(marksheet):
+        if b==s:
+            scorelist.remove(s)
+    c=min(scorelist)
+    for n,s in sorted(marksheet):
+        if s==c:
+            print(n)
+
+        
+        
