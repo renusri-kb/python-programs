@@ -1,0 +1,4 @@
+def solve(s):
+    l=s.split(" ")
+    r= [i.capitalize() for i in l]       
+    return " ".join(r)
