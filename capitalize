@@ -2,3 +2,14 @@ def solve(s):
     l=s.split(" ")
     r= [i.capitalize() for i in l]       
     return " ".join(r)
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
+
